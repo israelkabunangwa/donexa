@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 300;
+}
+#bars{
+    display: none;
+    color: white;
+}
+#header{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+#header video{
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    top: 50%;
+    left: 50%;
+    z-index: -100;
+    transform: translate(-50%,-50%);
+}
+.headerContainer{
+    background: rgba(0,0,0,0.6);
+    height: 100vh;
+}
+#header .navbar{
+    display: flex;
+   justify-content: space-between;
+   height: fit-content;
+   padding: 2em 8em;
+   
+}
+#header .menu_language{
+    display: flex;
+}
+.logoSymbol{
+    color: white;
+    background: #00BFFF;
+    padding:0em 0.5em;
+    font-size: 1em;
+}
+.logoName{
+    color: #00BFFF;
+}
+
+.menu ul li{
+    display:inline-block ;
+    margin: 0 2em;
+    list-style: none;
+}
+.menu ul li a{
+    position: relative;
+    text-decoration: none;
+    color: white;
+    padding: 0.2em;
+}
+.menu ul li a::before{
+    position: absolute;
+    content: '';
+    left: 0px;
+    bottom: 0px;
+    height: 3px;
+    width: 100%;
+    background: #00BFFF;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition:transform .4s linear;
+}
+.menu ul li a:hover:before{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.active{
+    border-bottom:  3px solid #00BFFF;
+}
+.language{
+    background: #00BFFF;
+    padding: 0em 0.5em;
+    border-radius: 1em;
+}
+.language i{
+    margin-right:0.5em;
+    color: white;
+}
+.headerDecription{
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    padding: 8em;
+}
+.headerDecription p{
+  font-size: 2em;
+  line-height: 2em;
+  color:white ;
+  font-weight: 600;
+}
+
+/*==================================================================================*/
+#services{
+    background: #DCDCDC;
+}
+.servicesDecription{
+    display: flex;
+}
+.servicesDecriptionTitle{
+    width: 35%;
+    padding: 8em;
+    display: block;
+   background: rgba(255,255,255,0.2);
+}
+.servicesDecriptionTitle{
+    display: flex;
+    align-items: center;
+}
+
+.servicesDecriptionTitle  h2{
+    
+    font-size: 3em;
+    color: #808080;
+    font-weight: 700;
+}
+.servicesDecriptionTitle  h2 span{
+    display: block;
+    line-height: 1em;
+    font-weight: 700;
+}
+.servicesDecriptionTitle p{
+    margin-top: 1em;
+}
+
+.servicesDecriptionText{
+    width: 65%;
+    padding: 8em;
+}
+.active{
+    border-bottom: 1px solid black;
+    font-size: 2em;
+}
+.otherServices{
+    margin-top: 1em;
+}
+.servicesDecriptionTextSaas{
+    display: flex;
+}
+.servicesDecriptionTextSaas1{
+    width: 50%;
+    text-align: center;
+    padding: 2em;
+    margin: 1em;
+    border: 1px solid #DCDCDC;
+    color: gray;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+}
+.servicesDecriptionTextSaas1:hover,.servicesDecriptionTextSaas2:hover{
+    transform: scale(1.1);
+   transition: 1s;
+}
+.servicesDecriptionTextSaas2{
+    width: 50%;
+    text-align: center;
+    padding: 2em;
+    margin: 1em;
+    border: 1px solid #DCDCDC;
+    color: gray;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+}
+/*==============================================================================*/
+#industries{
+    width: 100%;
+    height: fit-content;
+    animation: animate 10s infinite;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}
+@keyframes animate{
+    100%{
+        background-image: url('IMG/santé.jpg');
+    }
+    0%{
+        background-image: url('IMG/education.jpg');
+    }
+}
+.industrieContainer{
+    background: rgba(0,0,0,0.6);
+    color: white;
+    padding: 4em;
+}
+.industrieContainer .santé,.education{
+   padding: 4em; 
+}
+.industrieContainer .santé h3,.education h3{
+    font-size: 2em;
+ }
+.industrieTitle{
+    padding: 4em;
+}
+.industrieTitle h2{
+    font-size: 3em;
+    font-weight: 700;
+}
+.industrieContainer .santé{
+    border-right: 1px solid gray;
+}
+
+.santé_education{
+    display: flex;
+}
+.santé_education .santé,.education{
+    width: 50%;
+}
+
+#contact{
+    display: flex;
+    padding: 4em;
+   
+}
+.contactText{
+    width: 50%;
+    padding: 4em;
+    display: flex;
+    align-items: center;
+}
+.contactTextContainer h2{
+    font-size: 3em;
+    font-weight: 700;
+    color: GRAY;
+}
+.contactTextContainer p{
+    margin-top: 1em;
+}
+.contactTextContainer .coordonnées{
+    width: 100%;
+    margin-top: 1em;
+}
+.contactTextContainer .coordonnées i{
+    margin-right: 1em;
+    color: gray;
+}
+.contactForm{
+    width: 50%;
+    padding: 4em;
+}
+
+.contactForm input{
+    display: block;
+    width: 100%;
+    padding: 1em;
+    margin: 1em;
+    outline: none;
+}
+.contactForm textarea{
+    margin: 1em;
+    width: 100%;
+    height: 150px;
+    outline: none;
+    padding: 1em;
+}
+
+.submit{
+    background-color: #00BFFF;
+    border: 0px;
+    color: white;
+}
+#footer{
+    background-color: #191919;
+    color: white;
+    text-align: center;
+    padding: 1em 0em;
+}
+#footer span{
+    color: #00BFFF;
+}
+
+.fixed{
+    position: fixed;
+    top: 0px;
+    z-index: 1000;
+    width: 100%;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    animation-name:fixedAnim;
+    animation-duration: 1s; 
+}
+.fixed .menu_language .menu ul li a{
+    text-decoration: none;
+    color: #191950;
+}
+.fixed #bars{
+    color: #00BFFF ;
+}
+@keyframes fixedAnim{
+    from{opacity: 0;}
+    to{opacity: 1;}
+} 
+
+
+.three{
+    animation-name:three;
+    animation-duration: 1s; 
+} 
+@keyframes three{
+    from{transform:translateY(50%);opacity: 0;}
+    to{transform:translateY(0%);opacity: 1;}
+} 
+.two{
+    animation-name:two;
+    animation-duration: 2s; 
+} 
+@keyframes two{
+    from{transform:translateY(50%);opacity: 0;}
+    to{transform:translateY(0%);opacity: 1;}
+} 
+.one{
+    animation-name:one;
+    animation-duration: 3s; 
+} 
+@keyframes one{
+    from{transform:translateY(50%);opacity: 0;}
+    to{transform:translateY(0%);opacity: 1;}
+} 
+
+.text{
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.modal{
+    display: none;
+    margin: 0;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 2000;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.6);
+
+}
+.modal nav{
+    position: relative;
+    background-color: black;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 0rem;
+    margin-top: 2rem;
+    animation-name: modalAnimation;
+    animation-duration: 1s;   
+}
+.modal nav ul{
+    width: 100%;
+    text-align: center;
+    margin: 2rem;
+}
+.modal nav ul li a{
+    text-decoration: none;
+    color: gray;
+    padding: 0.2rem;
+}
+.modal nav ul li{
+    margin: 2rem;
+}
+.modal nav .closeM{
+    color: red;
+    position: absolute;
+    top: -1rem;
+    right:-1rem;
+    padding: 0.3rem;
+    background-color: #DCDCDC;
+    border-radius: 50%;
+    width: fit-content;
+    height: fit-content;
+}
+.modal nav .closeM .closeSymbol{
+    background-color:black;
+    padding: 0.2rem;
+    border-radius: 50%;
+    color: #00BFFF;
+}
+@keyframes modalAnimation{
+    from {left: -100%;}
+    to {left:0%;}
+  }
+
+
+.textAnimation {
+    animation-name: textAnimation;
+    animation-duration: 2s;
+}
+@keyframes textAnimation{
+    from{ transform:scale(0.7);opacity: 0.5;}
+    to{transform:scale(1);opacity: 1;}
+} 
+
+.textAnim{
+    opacity: 0;
+    transition: opacity 1s ease-in-out; 
+}
+

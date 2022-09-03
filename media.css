@@ -1,0 +1,125 @@
+
+@media only screen and (max-width:992px){
+    #bars{
+        display: block;
+        font-size: 1.5em;
+    }
+    .menu{display: none;}
+    .language select{display: none; }
+        .servicesDecription{display: block;}
+        .servicesDecriptionTitle{
+            width: 100%;
+            padding: 2em; 
+        }
+        .servicesDecriptionTitle div{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .servicesDecriptionTitle  h2 span{
+            display:inline-block;
+            line-height: 1em;
+            font-weight: 700;
+        }
+        .servicesDecriptionText{ padding: 2em;width: 100%;}
+        .industrieContainer .santé,.education{padding: 2em;}
+        .industrieContainer{padding: 2em;}
+        .industrieTitle{
+            padding: 2em;
+        }
+        #contact{padding: 2em;}
+        .contactForm{padding: 0em 2em;}
+        .contactText{padding: 2em;}
+}
+
+@media only screen and (max-width:850px)
+
+{
+    .headerDecription{text-align: center;}
+    .headerDecription div{
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .servicesDecriptionTitle div p{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:720px) {
+    
+	.headerDecription{
+        display: flex;
+        height: 90vh;
+        align-items: center;
+        padding: 2em;
+        text-align: center;
+    }
+    .headerDecription p{
+        font-size: 1.5em;
+        line-height: 1.5em;
+    }
+    #header .navbar{padding: 1em;}
+    .servicesDecriptionTextSaas{display: block;}
+    .servicesDecriptionTitle{
+        width: 100%;
+        padding: 2em;
+    }
+    .servicesDecriptionTextSaas1{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .servicesDecriptionTextSaas2{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .servicesDecriptionText{width: 100%;}
+    .servicesDecriptionTitle  h2{font-size: 2em;text-align: center;}
+    .servicesDecriptionTitle  h2 span{
+        display:inline-block;
+        line-height: 1em;
+        font-weight: 700;
+    }
+    .santé_education{
+        display: block;
+        text-align: center;
+    }
+    .santé_education .santé,.education{width: 100%;}
+    .industrieContainer .santé,.education{
+        padding: 2em; 
+        border: 1px solid white;
+        margin: 1em;
+        margin-left: auto;
+        margin-right: auto;
+     }
+     .industrieContainer,.industrieTitle{
+        padding: 2em;
+        text-align: center;
+    }
+    .industrieTitle h2{font-size: 2em;}
+    #contact{
+        display: block;
+        padding: 2em;
+    }
+    .santé_education .santé,.education{width: 100%;}
+    .contactText,.contactForm{
+        width: 100%;
+        padding: 0.5em;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .contactTextContainer h2{font-size: 2em;}
+    .contactForm input{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .contactForm textarea{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+ 
+}
